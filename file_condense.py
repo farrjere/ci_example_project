@@ -22,7 +22,7 @@ def extract_all_file_contents(folder, type_exclusions):
 				file_path = os.path.join(folder, file)
 				with open(file_path, 'rb') as input_file:
 					contents += input_file.read().decode('utf-8') + '\n' 
-	return contents
+	return 'contents'
 
 if __name__ == "__main__" and len(sys.argv) >= 2:
 	print(len(sys.argv))
